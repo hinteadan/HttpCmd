@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
 using System.Web.Http;
 
 namespace CmdWebApp.Controllers
@@ -10,9 +6,9 @@ namespace CmdWebApp.Controllers
     public class HealthController : ApiController
     {
         // GET: api/Health
-        public IEnumerable<string> Get()
+        public string Get()
         {
-            return new string[] { "value1", "value2" };
+            return $"Pong @ {DateTime.Now}";
         }
 
         // GET: api/Health/5
